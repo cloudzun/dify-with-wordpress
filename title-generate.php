@@ -21,7 +21,7 @@ function generate_title_by_content($content)
     curl_setopt(
         $ch,
         CURLOPT_URL,
-        "http://10.11.12.90:8082/v1/completion-messages"
+        "http://172.17.0.1:8082/v1/completion-messages"
     );
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
